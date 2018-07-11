@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Make `a` like a button */
+[role="button"] {
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+html {
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7fa;
+  color: #343434;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.25em;
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+}
+
+.logo--black {
+  color: #000;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  padding: 0 0.9375em;
+}
+
+.menu__item a {
+  font-size: 0.9375em;
+  color: #fff;
+  -webkit-transition: .5s color;
+  transition: .5s color;
+}
+
+.menu__item a:hover {
+  color: green;
+}
+
+.btn--small {
+  color: #000;
+  font-size: 0.875em;
+  padding: 0.875em 1.375em;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: -0.625em;
+  left: 0;
+}
+
+.header {
+  background-image: url("/images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 75em;
+  margin: 0 auto;
+  padding: 0 0.9375em;
+}
+
+.header__top {
+  padding: 2.1875em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__right .nav-trigger {
+  position: relative;
+  cursor: pointer;
+  z-index: 200;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  margin-left: 25px;
+}
+
+.header__right .nav-trigger .line {
+  width: 15px;
+  height: 2px;
+  margin-bottom: 3px;
+  background: #fff;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.header__right .nav-trigger .line:first-child {
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.header__right .nav-trigger .line:last-child {
+  -ms-transform-origin: 40px 3px;
+  -webkit-transform-origin: 40px 3px;
+  transform-origin: 40px 3px;
+}
+
+.header__right .nav-trigger .open {
+  -ms-transform: translate(-3px, -7px);
+  -webkit-transform: translate(-3px, -7px);
+  transform: translate(-3px, -7px);
+}
+
+.header__right .nav-trigger .open .line {
+  width: 35px;
+  height: 3px;
+  margin-bottom: 12.6px;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.header__right .nav-trigger .open .line:first-child {
+  -ms-transform: rotate(405deg) translate(11px, 12px);
+  -webkit-transform: rotate(405deg) translate(11px, 12px);
+  transform: rotate(405deg) translate(11px, 12px);
+  -ms-transform-origin: 50% 8px;
+  -webkit-transform-origin: 50% 8px;
+  transform-origin: 50% 5px;
+}
+
+.header__right .nav-trigger .open .line:last-child {
+  -ms-transform: rotate(-405deg) translate(10px, -10px);
+  -webkit-transform: rotate(-405deg) translate(10px, -10px);
+  transform: rotate(-405deg) translate(10px, -10px);
+  -ms-transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
